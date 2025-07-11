@@ -9,7 +9,7 @@
     font-size: 18px;
     display: flex;
     flex-direction: column;
-
+    position: relative;
     align-items: center;
     font-weight: 900;
     box-sizing: border-box;
@@ -41,6 +41,8 @@
             transition: border-color 0.3s ease;
             font-family: cursive;
         }
+
+
 
 
         button {
@@ -94,7 +96,7 @@
             .line-through {
                 text-decoration: line-through;
                 color: #888;
-                opacity: 0.7;
+                opacity: 0.7
             }
 
             button {
@@ -126,6 +128,15 @@
                 font-family: cursive;
             }
         }
+    }
+
+    .kero-logo {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        top: 5px;
+        right: 45px;
+
     }
 }
 

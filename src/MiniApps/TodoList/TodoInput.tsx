@@ -26,6 +26,7 @@ function TodoInput({ onAddTodo }: inputProps) {
                 ref={todoAddRef}
                 autoFocus
             />
+
             <button onClick={(e) => handleAddNewTodo(e)}>Thêm</button>
         </div>
     )

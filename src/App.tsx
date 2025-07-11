@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { type Todo } from './types/todo';
+import React from 'react';
 import './App.css'
 import TodoList from './MiniApps/TodoList/TodoList';
 

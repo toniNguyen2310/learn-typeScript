@@ -59,6 +59,7 @@ const TodoList: React.FC = () => {
             <div id={highlightTitle ? 'highlight' : ''} className='todo_container-title'>Todo Matsu</div>
             <TodoInput onAddTodo={onAddTodo} />
             <TodoTasks todos={todos} onUpdateTitle={onUpdateTitle} onDeleteTodo={onDeleteTodo} onToggle={onToggle} />
+
         </div>
     );
 };

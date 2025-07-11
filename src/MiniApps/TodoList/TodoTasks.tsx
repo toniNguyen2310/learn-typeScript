@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import type { Todo } from './TodoList'
 import TodoItem from './TodoItem'
 
