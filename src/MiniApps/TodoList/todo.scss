@@ -1,0 +1,136 @@
+.todo_container {
+    background-color: #5DC3EB;
+    width: 600px;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    color: black;
+    font-family: cursive;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    font-weight: 900;
+    box-sizing: border-box;
+
+    &-title {
+        font-size: 30px;
+        margin-bottom: 20px;
+        transition: all 0.4s ease;
+
+    }
+
+    &-input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin: 16px auto;
+        max-width: 500px;
+        padding: 8px;
+        width: 80%;
+
+        input {
+            flex: 1;
+            padding: 10px 12px;
+            font-size: 16px;
+            border: 3px solid black;
+            border-radius: 8px;
+            outline: none;
+            transition: border-color 0.3s ease;
+            font-family: cursive;
+        }
+
+
+        button {
+            padding: 10px 16px;
+            font-size: 16px;
+            background-color: #fcf080;
+            color: black;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border: 2px solid black;
+            font-weight: 900;
+        }
+
+
+    }
+
+    &-list {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 80%;
+
+
+        .todo-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f6f6f6;
+            padding: 12px 14px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            transition: background-color 0.3s ease;
+            gap: 2px;
+
+            span {
+                font-size: 16px;
+                color: #333;
+                flex: 1;
+                // text-decoration: line-through
+            }
+
+            span:hover {
+                cursor: pointer;
+            }
+
+            .line-through {
+                text-decoration: line-through;
+                color: #888;
+                opacity: 0.7;
+            }
+
+            button {
+                padding: 6px 12px;
+                font-size: 14px;
+                background-color: #ff4d4f;
+                color: white;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            .edit-button {
+                background-color: green;
+            }
+
+            .save-button {
+                background-color: #194787;
+            }
+
+            input {
+                flex: 1;
+                padding: 8px;
+                font-size: 16px;
+                border-radius: 6px;
+                border: 1px solid #f6f6f6;
+                outline: none;
+                font-family: cursive;
+            }
+        }
+    }
+}
+
+#highlight {
+    color: #ffffff;
+    transform: scale(1.05);
+    text-shadow: 0 0 8px #ffffff;
+}
